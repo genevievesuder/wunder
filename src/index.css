@@ -1,10 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: red;
+/* ////imports//// */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap');
+/* font-family: 'Cormorant Garamond', serif; */
+
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
+.home{
+  margin-top: 25px;
+  min-height: 100vh;
+  background-color: #fcf7f0;
+  padding: 2.25em;
+  bottom: 0;
+}
+
+.nav{
+  top:0;
+  position: fixed;
+  background-color: rgba(172, 185, 188, 0.447);
+  backdrop-filter: blur(3px);
+  min-width: 100%;
+  font-size: 10px;
+  margin-bottom: 1em;
+}
+
+.nav-list {
+  color: #322f2f;
+  text-align: center;
+  padding: .5em;
+  font-size: 35px;
+}
+
+.nav-link{
+  min-width: 100%;
+  text-decoration: none;
+  margin-top: .5em;
+  display: inline-block;
+  border: 2px transparent;
+  border-radius: 7px;
+  background-color: #9e99b72c;
+  padding: .5em;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.logo{
+  margin: .5em;
+  max-width: 280px;
+  max-height: 80px;
+}
+
+.backdropImg{
+  max-width: 100%;
+  display: inline-block;
+  border-radius: 2px;
+}

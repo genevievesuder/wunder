@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import React from 'react'
-import Box from '@mui/material/Box';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Button from '@mui/material/Button';
 
@@ -20,26 +19,24 @@ const Navbar = () => {
         setState({ ...state, [anchor]: open });
       };
 
-      const list = (anchor) => (
-        <Box
-          sx={'auto'}
-          role="presentation"
-          onClick={toggleDrawer(anchor, false)}
-          onKeyDown={toggleDrawer(anchor, false)}
-        >
-          <Link to="/">Home</Link><br/>
-          <Link to="/gallery">Gallery</Link>
-        </Box>
+      const list = () => (
+        <div className="nav-list">
+          <Link className="nav-link" to="/">Home</Link><br/>
+          <Link className="nav-link" to="/gallery">Gallery</Link>
+        </div>
       );
 
 
   return (
-    <div>
+    <div className="nav">
               {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>Menu</Button>
+          <Button onClick={toggleDrawer(anchor, true)}>
+          {/* <img className="logo" src={process.env.PUBLIC_URL+"/images/logo.png"} alt="logo"/> */}
+          Menu
+          </Button>
           <SwipeableDrawer
-            anchor={anchor}
+            anchor='left'
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
             onOpen={toggleDrawer(anchor, true)}

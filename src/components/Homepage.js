@@ -1,8 +1,11 @@
-import React from 'react'
 
 const Homepage = () => {
+
+
   return (
-    <div>Homepage</div>
+    <div className="home">
+      <img className="backdropImg" src={process.env.PUBLIC_URL+"/images/backdrop.JPEG"} alt="scenery backdrop"/>
+    </div>
   )
 }
 
