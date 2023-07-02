@@ -22,13 +22,14 @@ const Navbar = () => {
       const list = () => (
         <div className="nav-list">
           <Link className="nav-link" to="/">Home</Link><br/>
-          <Link className="nav-link" to="/gallery">Gallery</Link>
+          <Link className="nav-link" to="/gallery">Gallery</Link><br/>
+          <Link className="nav-link" to="/about">About</Link>
         </div>
       );
 
 
   return (
-    <div className="nav">
+    <div className="navbar">
               {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>

@@ -10,6 +10,17 @@ body {
   margin: 0;
 }
 
+.slide-container{
+  text-align: center;
+
+}
+
+.slide-images{
+  object-fit: contain;
+  max-width: 90%;
+  border-radius: 3px;
+}
+
 .home{
   margin-top: 25px;
   min-height: 100vh;
@@ -18,7 +29,12 @@ body {
   bottom: 0;
 }
 
-.nav{
+.hr{
+  color: red;
+}
+
+.navbar{
+  z-index: 1000;
   top:0;
   position: fixed;
   background-color: rgba(172, 185, 188, 0.447);
@@ -57,4 +73,20 @@ body {
   max-width: 100%;
   display: inline-block;
   border-radius: 2px;
+}
+
+.about{
+  margin-top: 25px;
+  min-height: 100vh;
+  background-color: #fcf7f0;
+  padding: 2.25em;
+  bottom: 0;
+}
+
+.gallery{
+  margin-top: 25px;
+  min-height: 100vh;
+  background-color: #fcf7f0;
+  padding: 2.25em;
+  bottom: 0;
 }
